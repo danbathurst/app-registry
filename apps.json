@@ -506,5 +506,63 @@
       }
     ],
     "setup": []
-  }
+  },
+  {
+    "name": "Squad AI",
+    "description": "Connects Squad AI’s product‑discovery and strategy platform to any MCP‑aware LLM. Enables chat‑based creation, querying and updating of product artefacts—opportunities, solutions, outcomes, requirements and feedback.",
+    "icon": {
+      "type": "url",
+      "url": {
+        "light": "https://ko6ejqisij3mnytb.public.blob.vercel-storage.com/squad/squad-favicon-320x320-AbeoUEieM0dUNHqfMwKzBloMD04vqW.png",
+        "dark": "https://ko6ejqisij3mnytb.public.blob.vercel-storage.com/squad/squad-favicon-320x320-AbeoUEieM0dUNHqfMwKzBloMD04vqW.png"
+      }
+    },
+    "category": "Productivity",
+    "price": "Free",
+    "developer": "Squad AI",
+    "sourceUrl": "https://github.com/the-basilisk-ai/squad-mcp",
+    "config": {
+      "mcpKey": "squad",
+      "runtime": "uvx",
+      "args": [
+        "squad-mcp"
+      ]
+    },
+    "features": [
+      {
+        "name": "Create or update opportunities",
+        "description": "Discover and refine product opportunities in Squad directly from chat",
+        "prompt": "Create a new opportunity in Squad for improving user onboarding speed"
+      },
+      {
+        "name": "Generate solution ideas",
+        "description": "Ask an LLM to brainstorm solution concepts and push them to Squad",
+        "prompt": "List three solution ideas for the onboarding opportunity we just logged"
+      },
+      {
+        "name": "Produce PRDs & BDD requirements",
+        "description": "Turn structured Squad data into full PRDs and behaviour‑driven test cases",
+        "prompt": "Generate a PRD for solution SOL‑123 and add BDD requirements"
+      },
+      {
+        "name": "Stream feedback into Squad",
+        "description": "Send customer or analytics feedback straight to the Squad workspace",
+        "prompt": "Log this Slack message as feedback in Squad and link it to opportunity OPP‑456"
+      }
+    ],
+    "setup": [
+      {
+        "label": "Generate an API key",
+        "value": "Sign in at https://meetsquad.ai — Settings → API Keys — and create a key with write access.",
+        "type": "text"
+      },
+      {
+        "label": "Squad AI API Key",
+        "type": "input",
+        "placeholder": "Enter your Squad AI API key",
+        "value": "Enter your Squad AI API key",
+        "key": "SQUAD_API_KEY"
+      }
+    ]
+  }  
 ]
